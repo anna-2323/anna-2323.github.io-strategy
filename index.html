@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Стратегически игри и решаването им</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	<style>
+		h3 {
+			font-size: 40px !important;
+		}
+
+		.slide-content {
+			display: flex;
+			font-size: 30px;
+		}
+
+		img {
+			max-width: 500px !important;
+			max-height: 500px !important;
+			width: 100% !important;
+			object-fit: contain;
+		}
+
+		.narrow {
+			max-width: 550px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>Стратегически игри и решаването им</h2>
+				<i>Анна Георгиева, 226238, Компютърни науки</i>
+			</section>
+
+			<section>
+				<h3>Какво е стратегическа игра?</h3>
+				<div class="slide-content">
+					<ul>
+						<li>Стратегическата игра е игра на умение, без или с минимално участие на шанс</li>
+						<li>Обикновено се играе от двама или повече играчи</li>
+						<li>Често има общи черти с военните игри</li>
+					</ul>
+					<div>
+						<img src="res/dice.png" style="height: 30%;" /> <br />
+						<img src="res/cog.png" />
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<h3>История на стратегическите игри</h3>
+				"Класически" стратегически игри:
+				<div class="slide-content">
+					<div>
+						<img src="res/ur.jpg" /> <br />
+						<img src="res/go.png" /> 
+					</div>
+					<div>
+					<ul class="narrow">
+						<li>Кралската игра на Ур - <i>2600-2400 г. пр. н. е. в Древна Месопотамия</i></li>
+						<li>Го - <i>преди 3000-4000 г. в Древен Китай</i></li>
+						<li>Шах - <i>6 в. в Индия</i></li>
+					</ul>
+					<img src="res/chess.jpg" />
+				</div>
+				</div>
+			</section>
+
+			<section>
+				<h3>Абстрактна стратегическа игра</h3>
+				<div class="slide-content">
+					<p class="narrow">Игрите, цялостно елиминиращи шанса, се наричат абстрактни. Към тях спадат го, шах, дама и др.
+						Те са детерминистични и дават съвършена информация на всеки играч.
+						Съвършена информация означава, че играчът е информиран за всяко събитие, настъпило в играта,
+						включително нейната инициализация.
+						Могат да бъдат цялостно „решени“ от компютър на теория, но не винаги е възможно на практика</p>
+					<img src="res/checkers.jpg" style="height:100%;" />
+				</div>
+			</section>
+
+			<section>
+				<h3>Влиянието на компютрите върху развитието на стратегическите игри</h3>
+				<div class="slide-content">
+						<img src="res/deepblue.png"/>
+					<div>
+				<ul class="narrow">
+					<li>1946 г. – Алан Тюринг</li>
+					<li>1979 г. – компютърът Belle на Кен Томпсън</li>
+					<li>1997 г. – Deep Blue на IBM (Първият компютър, победил шампион)</li>
+					<li>2016 г. - AlphaZero на DeepMind</li>
+				</ul>
+				
+				<img src="res/deepmind.png"/>
+			</div>
+			</div>
+			</section>
+
+			<section>
+				<h3>Компютърни стратегически игри. Real-time Strategy (RTS) игри </h3>
+				<div class="slide-content">
+					<div>
+				<img src="res/herzog.jpg"/><br/>
+				<img src="res/starcraft.png"/>
+			</div>
+				<ul class="narrow">
+					<li>Играчите нямат ходове, а играят в „реално време“</li>
+					<li>Цел: събиране на ресурси, разполагане на елементи като съоръжения и подразделения върху картата
+						с цел унищожаване ресурсите на противниците</li>
+					<li>Herzog Zwei и Dune 2 се смятат за първите Real-time Strategy (RTS) игри </li>
+					<li>Command and Conquer, Starcraft и Age of Empires</li>
+				</ul>
+			</div>
+			</section>
+
+			<section>
+				<h3>Turn-based Strategy, 4X</h3>
+				<div class="slide-content">
+				<ul class="narrow">
+					<li>Turn-Based Strategy (TBS) игрите се доближават повече до класическите, защото и в тях играчите
+						имат ходове</li>
+					<li>Explore, Expand, Exploit, Exterminate (4X) игрите Обикновено спадат към TBS</li>
+					<li>Sid Meier’s Civilization, Stellaris, Age of Wonders</li>
+				</ul>
+				<div>
+				<img src="res/civ.webp"/><br/>
+					<img src="res/stellaris.jpg"/>
+				</div>
+			</div>
+			</section>
+
+			<section>
+				<h3>Multiplayer Online Battle Arena (MOBA)</h3>
+				<div class="slide-content">
+				<ul class="narrow">
+					<li>Играчите са разделени на два екипа</li>
+					<li>Целта на екипа е да унищожи защитните съоръжения на противника</li>
+					<li>Значително присъствие в esports</li>
+					<li>Dota 2, League of Legends</li>
+				</ul>
+				<img src="res/mobamap.png"/>
+			</div>
+			</section>
+
+			<section>
+				<h3>Изкуствен интелект в стратегическите компютърни игри</h3>
+			</section>
+
+			<section>
+				<h3>TBS</h3>
+				<div class="slide-content">
+					<p>Minimaxing с alpha-beta pruning: алгоритъм, използван при решаване на шах и други последователни
+						(turn-based) игри. Съставя се дърво с дълбочина N, което представя всички възможни начини, по
+						които може да протече играта в следващите N хода.</p>
+				</div>
+			</section>
+
+			<section>
+				<h3>RTS</h3>
+				<div class="slide-content">
+				<ul>
+					<li>Крайни автомати – едни от най-разпространените системи в компютърните игри от всички жанрове</li>
+					<li>Еволюционни алгоритми – добавят динамика в поведението на играта</li>
+					<li>Методът Case-based reasoning (CBR)</li>
+					<li>Може да се използва и машинно обучение с данни, получени от поведението на истински играчи или
+						други по-сложни решения, но те изискват повече ресурси за имплементиране</li>
+				</ul>
+			</div>
+			</section>
+
+			<section>
+				<h3>MOBA</h3>
+				<div class="slide-content">
+				<ul>
+					<li>Алгоритъм А* за намиране на най-кратък път</li>
+					<li>Behavior tree (BT)</li>
+					<li>Към поведението на ботовете е възможно да се добави изкуствен интелект, с който да се адаптира
+						към играча и да играе на съответното ниво.</li>
+				</ul>
+			</div>
+			</section>
+
+			<section></section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script>
+		Reveal.initialize({
+			hash: true,
+			plugins: []
+		});
+	</script>
+</body>
+
+</html>
